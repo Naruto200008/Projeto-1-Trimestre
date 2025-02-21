@@ -1,14 +1,115 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AluraBooks</title>
-    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Site sobre Animes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #666;
+        }
+
+        .main-content {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .anime {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 30%;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .anime img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .anime h2 {
+            color: #333;
+            margin: 15px 0 10px;
+        }
+
+        .anime p {
+            color: #555;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
-    <header class="cabeçalho">
-       <h3>Oi</h3> 
+    <header>
+        <h1>Site sobre Animes</h1>
     </header>
+
+    <nav>
+        <a href="#re-zero">Re:Zero</a>
+        <a href="#gurren-lagann">Gurren Lagann</a>
+        <a href="#evangelion">Evangelion</a>
+    </nav>
+
+    <div class="main-content">
+        <div class="anime" id="re-zero">
+            <img src="download.jpeg" alt="Re:Zero">
+            <h2>Re:Zero</h2>
+            <p>Re:Zero - Starting Life in Another World é uma história que segue Subaru Natsuki, um garoto que é transportado para um mundo de fantasia onde ele deve enfrentar desafios imensos.</p>
+        </div>
+
+        <div class="anime" id="gurren-lagann">
+            <img src="download (1).jpeg" alt="Gurren Lagann">
+            <h2>Gurren Lagann</h2>
+            <p>Gurren Lagann é uma série de ação que segue Simon e Kamina em sua luta para libertar a humanidade dos subterrâneos e levar a luta aos céus.</p>
+        </div>
+
+        <div class="anime" id="evangelion">
+            <img src="como-assistir-evangelion-netflix (1).png" alt="Evangelion">
+            <h2>Evangelion</h2>
+            <p>Neon Genesis Evangelion é uma obra que mistura ação, drama psicológico e ficção científica, centrada em Shinji Ikari e os mistérios envolvendo os anjos e os EVAs.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 Todos os direitos reservados</p>
+    </footer>
 </body>
 </html>
